@@ -1,4 +1,6 @@
+
 public class PrimitivosFloat {
+
 
     public static void main(String[] args) {
 
@@ -18,8 +20,6 @@ public class PrimitivosFloat {
 
         float varFlotante = 3.14f;
         System.out.println(varFlotante);
-
-
 
     }
 }
