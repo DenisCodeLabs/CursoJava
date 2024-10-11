@@ -25,15 +25,12 @@ public class OperadoresLogicosLogin {
         String pass = scanner.next();
 
         boolean isAuthentic = false;
+        
         for(int i = 0; i < usernames.length; i++){
-
-            if(usernames[i].equals(usuario) && passwords[i].equals(pass)){
-                System.out.println("Bienvenido ".concat(usuario));
-                isAuthentic = true;
-                break;
-            }
+            isAuthentic = (usernames[i].equals(usuario) && passwords[i].equals(pass))? true : isAuthentic;
         }
-        if(isAuthentic == false)
-            System.out.println("Datos incorrectos");
+        
+        String mensaje = isAuthentic ? "Bienenido ".concat(usuario).concat("!") : "Username o password ir wrong";
+        System.out.println(mensaje);
     }
 }
