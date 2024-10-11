@@ -30,7 +30,7 @@ public class OperadoresLogicosLogin {
             isAuthentic = (usernames[i].equals(usuario) && passwords[i].equals(pass))? true : isAuthentic;
         }
         
-        String mensaje = isAuthentic ? "Bienenido ".concat(usuario).concat("!") : "Username o password ir wrong";
+        String mensaje = isAuthentic ? "Bienenido ".concat(usuario).concat("!") : "Username o password is wrong";
         System.out.println(mensaje);
     }
 }
