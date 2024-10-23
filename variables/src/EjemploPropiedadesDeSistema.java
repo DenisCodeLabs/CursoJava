@@ -1,3 +1,5 @@
+import java.util.Properties;
+
 public class EjemploPropiedadesDeSistema {
     public static void main(String[] args) {
 
@@ -15,5 +17,12 @@ public class EjemploPropiedadesDeSistema {
 
         String lineSeparator = System.getProperty("line.separator");
         System.out.println("lineSeparator = " + lineSeparator);
+
+        String lineSeparator2 = System.lineSeparator();
+        System.out.println("lineSeparator2 = " + lineSeparator2);
+
+        Properties p = System.getProperties();
+        p.list(System.out);
+        
     }
 }
