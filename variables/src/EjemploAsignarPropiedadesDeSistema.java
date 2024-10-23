@@ -23,6 +23,7 @@ public class EjemploAsignarPropiedadesDeSistema {
             ps.list(System.out);
         } catch (Exception e) {
             System.out.println("No existe el archivo = " + e);
+            System.exit(1);
         }
 
     }
