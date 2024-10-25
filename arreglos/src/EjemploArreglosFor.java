@@ -43,8 +43,5 @@ public class EjemploArreglosFor {
         int j = numeros[1];
         int k = numeros[2];
         int l = numeros[3];
-
-
-
     }
 }
